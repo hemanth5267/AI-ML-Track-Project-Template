@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OptiCrop - About</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; }
+        .topnav {
+            background-color: #333;
+            overflow: hidden;
+            padding: 0 16px;
+        }
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .topnav a:hover { background-color: #ddd; color: black; }
+        .topnav a.active { background-color: #4CAF50; color: white; }
+        .about-container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .about-container h2 {
+            font-size: 1.5rem;
+            margin-bottom: 16px;
+            color: #333;
+        }
+        .about-container p {
+            font-size: 0.95rem;
+            line-height: 1.7;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .about-img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="topnav">
+        <a href="{{ url_for('home') }}">Home</a>
+        <a class="active" href="{{ url_for('about') }}">About</a>
+        <a href="{{ url_for('findyourcrop') }}">FindYourCrop</a>
+    </div>
+    <div class="about-container">
+        <h2>Opti Crop Smart Agricultural Optimization Using ML</h2>
+        <p>
+            The project "Opti Crop: Smart Agricultural Production Optimization Engine" aims to develop
+            an advanced software system that utilizes data-driven insights to optimize agricultural
+            production for different crops. By integrating key environmental factors such as Nitrogen (N),
+            Phosphorous (P), Potassium (K) levels, soil temperature, humidity, pH, rainfall, and crop types,
+            Opti Crop seeks to provide intelligent recommendations to farmers for maximizing yields and
+            resource efficiency.
+        </p>
+        <p>
+            The knowledge and insights gained through the Opti Crop project can be utilized by agricultural
+            researchers, policymakers, and stakeholders to advance the understanding of crop-environment
+            interactions and inform the development of evidence-based agricultural strategies.
+            The Opti Crop project revolutionizes agricultural practices by providing farmers with a smart
+            production optimization engine. By integrating key environmental factors and crop-specific
+            recommendations, Opti Crop enables farmers to achieve optimal yields, improve resource efficiency,
+            and contribute to sustainable agricultural practices.
+        </p>
+        <img class="about-img"
+             src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=900"
+             alt="Farmer in field">
+    </div>
+</body>
+</html>
